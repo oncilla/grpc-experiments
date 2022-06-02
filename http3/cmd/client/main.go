@@ -23,6 +23,7 @@ func main() {
 			},
 		},
 		"https://localhost:8080",
+		connect.WithGRPC(),
 	)
 	res, err := client.Greet(
 		context.Background(),
